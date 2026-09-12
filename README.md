@@ -24,6 +24,8 @@
 >
 > 🌱 I go **deep across the stack**: firmware, kernels, window managers, compilers, LLMs
 >
+> 💼 Building **[cloudgpu.io](https://cloudgpu.io)** — GPU cloud tooling & the Hola AI agent framework (C)
+>
 > ⚡ Currently exploring: **AI agents, LoRA fine-tuning, local inference, re-camera APIs**
 >
 > 🎯 Philosophy: *if it runs on metal, I want to know how*
@@ -107,10 +109,53 @@
 
 <div align="center">
 
+![cloudgpu.io](https://img.shields.io/badge/cloudgpu.io-Featured_Work-9146FF?style=flat-square)
 ![PlexyDesk](https://img.shields.io/badge/PlexyDesk-Founder-2ea44f?style=flat-square)
 ![BlockSettle](https://img.shields.io/badge/BlockSettle-Blockchain-FF6C37?style=flat-square)
 ![StoreKit](https://img.shields.io/badge/StoreKit-Commerce-blue?style=flat-square)
 ![CloudGPU](https://img.shields.io/badge/CloudGPU-Compute-9146FF?style=flat-square)
+
+</div>
+
+<br/>
+
+## ☁️ Featured Work — cloudgpu.io
+
+<div align="center">
+
+[![cloudgpu.io](https://img.shields.io/badge/☁️_cloudgpu.io-Cloud_GPU_Tools_%26_OS-9146FF?style=for-the-badge)](https://cloudgpu.io)
+[![GitHub Org](https://img.shields.io/badge/GitHub-github.com%2Fcloudgpu-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cloudgpu)
+
+**Building the toolchain for GPU-native AI workloads — from a hand-rolled C agent
+framework to serverless GPU pipelines.**
+
+</div>
+
+<br/>
+
+| Project | What it is |
+|---|---|
+| 🤖 **[hola-ai-agent](https://github.com/cloudgpu/hola-ai-agent)** | A small, dependency-light **C library for building conversational AI agents** — agent loop, tool registry, prompt assembly, OpenAI-compatible + local providers, session storage, and a C plugin system. Ships with **hola-admin** (sysadmin agent) and **hola-coder** (agentic coding tool). |
+| 📦 **[hola-releases](https://github.com/cloudgpu/hola-releases)** | Prebuilt cross-platform binaries (Linux / macOS / FreeBSD) with a one-line installer: |
+| ⚡ **[oxy](https://github.com/cloudgpu/oxy)** | **GPU Cloud command line access tool** — drive GPU instances straight from your terminal. |
+| 🌐 **[website](https://github.com/cloudgpu/website)** | The cloudgpu.io site (TypeScript). |
+| 🔊 **[demucs-runpod](https://github.com/cloudgpu/demucs-runpod) / [demucs-server](https://github.com/cloudgpu/demucs-server)** | Serverless GPU audio-source separation on RunPod. |
+| 🎛️ **[gpu_ctl_app](https://github.com/cloudgpu/gpu_ctl_app)** | Native C++ GPU control application. |
+
+<br/>
+
+```bash
+# Install Hola — Linux / macOS / FreeBSD
+curl -fsSL https://raw.githubusercontent.com/cloudgpu/hola-releases/main/install.sh | sh
+```
+
+<br/>
+
+<div align="center">
+
+[![hola-ai-agent](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=hola-ai-agent&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/hola-ai-agent)
+[![oxy](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=oxy&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/oxy)
+[![demucs-runpod](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=demucs-runpod&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/demucs-runpod)
 
 </div>
 
