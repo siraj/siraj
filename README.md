@@ -1,12 +1,14 @@
-<!-- 
+<!--
   ✨ siraj/siraj — The Work Journey ✨
   A blog-style chronicle of 17+ years of shipping software.
   🤖 This profile was generated & maintained by hola-ai-agent (hola-coder)
   → https://github.com/cloudgpu/hola-releases
 -->
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:58A6FF,50:9146FF,100:E34F26&section=header&text=Siraj%20Razick&fontSize=44&fontColor=ffffff&fontAlignY=38&desc=Systems%20Engineer%20%C2%B7%20AI%20Builder%20%C2%B7%20Fintech%20Veteran&descSize=17&descAlignY=58&animation=fadeIn" alt="banner" />
+
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=560&lines=Hi%2C+I'm+Siraj+Razick+%F0%9F%91%8B;I+build+display+servers%2C+AI+agents+%26+fintech;From+C+kernels+to+TypeScript+apps;17%2B+years+of+shipping+software" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=620&lines=Hi%2C+I'm+Siraj+Razick+%F0%9F%91%8B;I+build+display+servers%2C+AI+agents+%26+fintech;KDE+Plasma+contributor+since+2007+%F0%9F%90%A7;From+C+kernels+to+TypeScript+apps;17%2B+years+of+shipping+software" alt="Typing SVG" />
 </h1>
 
 <div align="center">
@@ -14,6 +16,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-siraj-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/siraj)
 [![cloudgpu.io](https://img.shields.io/badge/☁️_cloudgpu.io-GPU_Cloud_Tools-9146FF?style=for-the-badge)](https://cloudgpu.io)
 [![PlexyDesk](https://img.shields.io/badge/🖥️_PlexyDesk-Wayland_Display_Server-2ea44f?style=for-the-badge)](https://github.com/plexydesk)
+[![KDE](https://img.shields.io/badge/🐧_KDE-Plasma_Contributor-1D99F3?style=for-the-badge&logo=kde&logoColor=white)](#-chapter-0--the-kde-years-20072011)
 [![Location](https://img.shields.io/badge/📍-Montreal%2C+Canada-E34F26?style=for-the-badge)](#)
 [![Followers](https://img.shields.io/github/followers/siraj?style=for-the-badge&color=blue&logo=github)](https://github.com/siraj?tab=followers)
 
@@ -38,11 +41,54 @@
 
 | Era | Years | Theme |
 |---|---|---|
+| 🐧 [The KDE Years](#-chapter-0--the-kde-years-20072011) | 2007–2011 | Plasma, KBFX, Raptor — desktop shell hacking |
 | 🧱 [The Systems Years](#-chapter-1--the-systems-years-20082014) | 2008–2014 | C/C++ libraries, build systems, GStreamer, QNX |
 | 🏦 [The Fintech Years](#-chapter-2--the-fintech--blockchain-years-20192022) | 2019–2022 | Bitcoin infrastructure, regulated payments, PSD2 |
 | 🚀 [The Product Years](#-chapter-3--the-product--app-years-20232025) | 2023–2025 | TypeScript platforms, AI-assisted workflows |
 | 🖥️ [The PlexyShell Years](#-chapter-4--the-plexyshell-years-2025) | 2025– | A Wayland display server from scratch — 934 commits |
 | 🤖 [The Agent Era](#-chapter-5--the-agent-era-2026) | 2026– | Hola: a C library for AI agents + cloudgpu.io |
+
+<br/>
+
+---
+
+# 🐧 Chapter 0 — The KDE Years (2007–2011)
+
+> Before the display servers and the fintech platforms, I was a teenager
+> hacking on the **K Desktop Environment** — **146 upstream commits** in
+> KDE's core repositories between 2007 and 2011. This is where I learned
+> that the desktop is just software, and software can be rebuilt.
+
+### 🔥 `KBFX` — reimagining the K-menu
+
+My first real open-source chapter: I rewrote the **KBFX K-menu from
+scratch** — a complete replacement start menu for KDE 3 with a plugin
+data interface (credited alongside Aaron Seigo), SVG skinning, and
+config tooling. The `kbfxPlasma` / `silk` releases shipped to thousands
+of desktops. It taught me UI engineering the hard way: *pixels, timing,
+and the patience of users.*
+
+### 🦖 `Raptor` / `Plasmic-Raptor` — the KDE 4 menu experiment
+
+For KDE 4 I built **Raptor** — a Plasma menu engine with a custom
+`SliderView`, grid layout, and **SVG skin system** designed with the
+KDE visual-design crew (pinheiro, Nookie). Years before "launchers"
+became a product category, we were prototyping what a menu could be.
+
+### 🧩 Upstream Plasma work
+
+| Repository | Commits | What I touched |
+|---|---|---|
+| `kde-workspace` | 22 | Shell components, data visualization install plumbing |
+| `libplasma` / `plasma-framework` | 21 + 21 | Icon drop positioning, drag-and-drop pixmap shrink effects |
+| `kdelibs` | 19 | Core library fixes during the KDE 4 transition |
+| `ksvg` / `plasmasvg` | 10 | SVG rendering experiments for Plasma |
+| `ktp-*` (Telepathy) | 7 | Presence dataengine, desktop applets, Mission Control status bugs |
+| `plasma-desktop` / `kde-runtime` | 3 | Rendering fixes, experimental looks |
+
+> 🎓 **What this era taught me:** open source is a craft apprenticeship.
+> Review comments from the Plasma core team shaped how I write code
+> fifteen years later — and the Wayland obsession started right here.
 
 <br/>
 
@@ -55,7 +101,7 @@
 > compositing) and **Firefox/Gecko** (mousewheel zoom clamping in
 > mozilla-central, reviewed by bzbarsky). Working on two browser engines
 > back-to-back taught me how real-world C++ at scale is built — and it's
-> where the display-server obsession started.
+> where the display-server obsession deepened.
 
 > Where it all started: **C, C++, autotools, GStreamer, and the humble
 > conviction that software should build cleanly on any Unix.**
@@ -221,7 +267,7 @@ hardcore.
 | 🧮 **pcalc — scientific calculator** | Refactored into a **native PlexyShell scientific calculator** |
 | 🎨 **Cool Dock port** | Ported and refined **Cool Dock features** onto the server dock |
 | 🖱️ **Xwayland game mouse grabbing** | Stability fixes for **mouse grabbing in games** running through Xwayland |
-| 🧹 **Repository hygiene** | Untracked generated icons, verified `.gitignore` coverage for all build artifacts |
+| 🧹 **Repository hygiene** | Untracked generated icons, verified `.gitignore` coverage, kept the tree reproducible |
 
 > 🎓 **What this era taught me:** a display server is the most unforgiving
 > kind of software — every millisecond is visible, every leak is a crash,
@@ -299,6 +345,34 @@ to GPU management.
 
 ---
 
+# 🛠️ The Toolbox
+
+<div align="center">
+
+| | | |
+|---|---|---|
+| **Systems** | ![C](https://img.shields.io/badge/C-1970s?style=flat-square&logo=c&logoColor=white&color=A8B9CC) ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Wayland](https://img.shields.io/badge/Wayland-4A90D9?style=flat-square) ![GStreamer](https://img.shields.io/badge/GStreamer-F5A623?style=flat-square) | |
+| **Apps** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Qt](https://img.shields.io/badge/Qt-41CD52?style=flat-square&logo=qt&logoColor=white) | |
+| **Infra** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=white) ![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![RunPod](https://img.shields.io/badge/RunPod-9146FF?style=flat-square) | |
+
+</div>
+
+### ⚡ Skill bars — measured in shipped code
+
+```text
+C / C++                     ████████████████████░  95%   17 years, browser engines to display servers
+Wayland / Display Servers   ██████████████████░░░  90%   PlexyDesk — 934 commits, full stack from source
+Linux Systems & Packaging   █████████████████░░░░  85%   deb/rpm/Arch/PPA/NSIS, hermetic builds
+Python                      ███████████████░░░░░░  75%   auth services, trading engines, AI pipelines
+TypeScript / Web            ██████████████░░░░░░░  70%   marketplaces, trading hubs, audio suites
+AI / ML Engineering         ██████████████░░░░░░░  70%   agents, RAG, GPU inference, serverless ML
+Go                          ██████████░░░░░░░░░░░  50%   CLI tooling
+```
+
+<br/>
+
+---
+
 # 🌍 Open Source Contributions
 
 > Beyond my own repos: **295 pull requests** across the GitHub ecosystem —
@@ -306,6 +380,7 @@ to GPU management.
 
 | Project | Contribution |
 |---|---|
+| 🐧 **KDE / Plasma** *(upstream, 2007–2011)* | **146 commits** across `kde-workspace`, `libplasma`, `plasma-framework`, `kdelibs`, `ksvg`, Telepathy applets — plus the KBFX K-menu rewrite and the Raptor/Plasmic-Raptor KDE 4 menu engine |
 | 🌐 **WebKit** *(upstream, 2008 & 2012 — Collabora era)* | **4 landed patches in WebKit trunk** — `r34296` button fonts scale with text-size multiplier ([bug 19251](https://bugs.webkit.org/show_bug.cgi?id=19251)), `r35716` QtWebKit zoom get/set API ([bug 19125](https://bugs.webkit.org/show_bug.cgi?id=19125)), `r37764`+`r37787` `QWebHitTestResult::boundingRect()` API ([bug 19374](https://bugs.webkit.org/show_bug.cgi?id=19374)), `r128372` GTK Clutter accelerated-compositing build fix ([bug 96165](https://bugs.webkit.org/show_bug.cgi?id=96165), reviewed by Martin Robinson) — plus `<param classid>` support for `application/x-qt-object` plugins ([r26586](https://commits.webkit.org/26586@main)) |
 | 🦊 **Firefox / Gecko** *(upstream, 2008)* | **Patch landed in mozilla-central** — clamped mousewheel text zoom to min/max percentages in `nsEventStateManager::ChangeTextSize()` ([bug 424847](https://bugzilla.mozilla.org/show_bug.cgi?id=424847), `r+sr=bzbarsky`, changeset `ed515d20c255`) — still shipping today: the same commit rides along in **Tor Browser**, **I2P Browser** and **Waterfox** |
 | 🖥️ **PlexyDesk Display Server** *(org: [plexydesk](https://github.com/plexydesk))* | **15 PRs, 934 commits** — libxkbcommon keyboard support, GPU/VRAM budgeting, Pango/HarfBuzz/FreeType text engine, full VT100/xterm terminal, PTY modes, fuzzy launcher, pcalc, Cool Dock |
@@ -317,6 +392,25 @@ to GPU management.
 | 💸 **Payouts & migrations** | Payout flows, Alembic migration infrastructure, account-selection flows |
 | 🤖 **AI agent framework (Hola)** | RAG token-budgeted retrieval optimizer, surveillance platform prototype |
 | 🐧 **Community forks maintained** | `plymouth-themes` (80+ Android bootanimation themes ported), `Bluecurve` (Red Hat theme for GTK 3/4), `kwin-effects-forceblur` (Plasma 6 blur), `Linux-on-Samsung` (GPU-accelerated Linux on Galaxy), `MacQuake` (native Quake for Apple Silicon) |
+
+<br/>
+
+---
+
+# 🏢 The Constellation — orgs I build with
+
+<div align="center">
+
+| | |
+|---|---|
+| 🖥️ **[plexydesk](https://github.com/plexydesk)** | The Wayland display server & shell — my deepest systems work |
+| ⚡ **[cloudgpu](https://github.com/cloudgpu)** | GPU cloud tooling, the Hola agent ecosystem, cloudgpu.io |
+| 🏦 **[BlockSettle](https://github.com/BlockSettle)** | Regulated Bitcoin settlement infrastructure (2019–2022) |
+| 🛒 **[storekit](https://github.com/storekit)** | Commerce & marketplace platform work |
+
+*…plus 23 more orgs across fintech, AI, and open source.*
+
+</div>
 
 <br/>
 
@@ -336,6 +430,12 @@ to GPU management.
 <br/>
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=siraj&theme=tokyo-night&hide_border=true&bg_color=0D1117&area=true)](https://github.com/siraj)
+
+<br/>
+
+<a href="https://github.com/siraj">
+  <img src="https://github-profile-trophy.vercel.app/?username=siraj&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8&margin-h=8&no-bg=true" alt="Trophies" />
+</a>
 
 <br/>
 
@@ -362,10 +462,12 @@ to GPU management.
 
 ![Profile views](https://komarev.com/ghpvc/?username=siraj&color=58A6FF&style=for-the-badge&label=PROFILE+VIEWS)
 
-**"From C kernels to AI agents — the journey continues."**
+**"From KDE menus to Wayland compositors to AI agents — the journey continues."**
 
 🤖 *This profile was generated & is maintained by* **[hola-ai-agent](https://github.com/cloudgpu/hola-releases)** *(hola-coder)*
 
 ⭐️ From [siraj](https://github.com/siraj) — *Montreal, 2026*
 
 </div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:E34F26,50:9146FF,100:58A6FF&section=footer" alt="footer" />
