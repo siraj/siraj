@@ -37,7 +37,7 @@
 | Era | Years | Theme |
 |---|---|---|
 | 🧱 [The Systems Years](#-chapter-1--the-systems-years-20082014) | 2008–2014 | C/C++ libraries, build systems, GStreamer, QNX |
-| 🏦 [The Fintech Years](#-chapter-2--the-fintech--blockchain-years-20192022) | 2019–2022 | Bitcoin infrastructure, BlockSettle, PSD2 payments |
+| 🏦 [The Fintech Years](#-chapter-2--the-fintech--blockchain-years-20192022) | 2019–2022 | Bitcoin infrastructure, regulated payments, PSD2 |
 | 🚀 [The Product Years](#-chapter-3--the-product--app-years-20232025) | 2023–2025 | TypeScript platforms, AI-assisted workflows |
 | 🖥️ [The PlexyShell Years](#-chapter-4--the-plexyshell-years-2025) | 2025– | A Wayland display server from scratch — 934 commits |
 | 🤖 [The Agent Era](#-chapter-5--the-agent-era-2026) | 2026– | Hola: a C library for AI agents + cloudgpu.io |
@@ -91,44 +91,46 @@ streams, and the elegance of XML stanzas.
 
 # 🏦 Chapter 2 — The Fintech & Blockchain Years (2019–2022)
 
-> Four years inside **BlockSettle** — a regulated Bitcoin settlement platform —
-> where "production" means real money, real audits, and zero tolerance for
-> bugs.
+> Four years building a **regulated Bitcoin settlement platform** —
+> where "production" means real money, real audits, and zero tolerance for bugs.
 
 ### ₿ `ArmoryDB` — Headless Bitcoin database runtime (2019–2020)
 I forked **ArmoryDB** (the famous Bitcoin Armory wallet engine) and produced a
-**headless runtime** that BlockSettle's trading platform fully supported.
+**headless runtime** that the platform's trading system fully supported.
 This is a **116 MB C++ codebase**: memory-mapped blockchain parsing, Bitcoin
 Core integration, and a distributed database. My work covered:
 
 - **Producing the headless runtime** — stripping the wallet UI while keeping the full blockchain-indexing engine
-- **Binary distribution** — Ubuntu PPA (`ppa:blocksettle/armorydb`), Windows, and macOS builds
+- **Binary distribution** — Ubuntu PPA, Windows, and macOS builds
 - **`armorydb_installer`** — a full **NSIS installer** (~50 MB of packaging work) for Windows deployments
 - The delicate **memory-map contract**: ArmoryDB must run alongside a synced Bitcoin Core node on the same storage device
 
-### 🧩 `common` — BlockSettle system core (2020)
-The **shared code layer for the entire BlockSettle system** (~19 MB) — the
+### 🧩 `common` — Settlement system core (2020)
+The **shared code layer for the entire settlement system** (~19 MB) — the
 protocol definitions, cryptographic primitives, and common utilities that
-every BlockSettle service linked against. When you touch `common`, every
+every downstream service linked against. When you touch `common`, every
 service downstream feels it.
 
 ### 🔐 `login-server` — Authentication service (2021–2022)
-A **Python authentication and session service** for the BlockSettle
+A **Python authentication and session service** for the settlement
 ecosystem — session management, secure login flows, and the supporting
 test harness (`login-server-test-session`).
 
 ### 💱 `daytrader` — Trading engine (2022)
-A **Python trading engine** (~600 KB) built for BlockSettle's dealer
+A **Python trading engine** (~600 KB) built for the platform's dealer
 infrastructure — order handling and market-facing logic.
 
 ### 🏗️ The wider fintech constellation
 Around this core I built and maintained the connective tissue of a regulated
-financial platform — **295 pull requests** across the ecosystem:
+financial platform — **295 pull requests** of pure engineering:
 
-- **`seksettle/merchant-gateway`** — ~70 merged PRs: merchant staging/prod pipelines, deposit references, BankID flows, webhook retry persistence, PSD2 proxy scaling, cookie/session handling
-- **`BlockSettle/capn-playground`** — Cap'n Proto protocol work: payment info, validation API, BFX wallet updates, web3 bridges, rebalance APIs
-- **`Authenticate-eID-Sweden-AB/AuthServer`** — Swedish eID authentication: RMQ handling, mobile connection compilation fixes, invoice rounding
-- **`blocksettle-docker`** — reproducible Docker setup for the whole stack
+- **Merchant payment pipelines** — ~70 merged PRs across gateway services: deposit reference handling, operation IDs surfaced through GraphQL, KYC data plumbing for admin, cookie/session lifecycle, and ping/pong + channel invalidation for live connections
+- **Cryptographic orchestration** — multi-party signing orchestration improvements: sign recovery, orchestrator module updates, Cap'n Proto protocol revisions with network source/destination fields, and BFX wallet integration
+- **BankID & eID authentication** — yielded BankID results on async awaits, removed deprecated v6 redirect URLs, fixed mobile connection compilation, and hardened RMQ message handling
+- **PSD2 open-banking infrastructure** — scaled HTTP request handling in the PSD2 proxy and stabilized its SQL watcher for reliable transaction monitoring
+- **Webhook reliability** — refactored the WebhookEmitter to persist message retries across restarts, plus GC-error fixes on socket clearing
+- **Payouts & migrations** — payout flows, Alembic migration setup, and account-selection new-flow work in the merchant orchestrator
+- **Reproducible infrastructure** — Docker-based setup for the entire settlement stack
 
 > 🎓 **What this era taught me:** regulated fintech is where "it works on my
 > machine" goes to die. Every change is staged, audited, and signed. I learned
@@ -296,12 +298,13 @@ to GPU management.
 | Project | Contribution |
 |---|---|
 | 🖥️ **PlexyDesk Display Server** *(org: [plexydesk](https://github.com/plexydesk))* | **15 PRs, 934 commits** — libxkbcommon keyboard support, GPU/VRAM budgeting, Pango/HarfBuzz/FreeType text engine, full VT100/xterm terminal, PTY modes, fuzzy launcher, pcalc, Cool Dock |
-| 🏦 **seksettle/merchant-gateway** | **~70 merged PRs** — merchant payment pipelines, deposit references, BankID integration, webhook retry persistence, PSD2 proxy scaling |
-| 🧩 **BlockSettle/capn-playground** | Cap'n Proto protocol work — payment info, validation API, BFX wallet updates, web3 bridge, rebalance API |
-| 🪪 **Authenticate-eID-Sweden-AB/AuthServer** | Swedish eID authentication — RMQ handling, mobile connection fixes, invoice rounding |
-| 💳 **seksettle/merchant-orchestrator** | Payouts, Alembic migrations, account-selection flows |
-| 🔐 **seksettle/psd2-proxy** | HTTP request scaling, SQL watcher stabilization |
-| 🤖 **cloudgpu/hola-ai-agent** | RAG token-budget retrieval optimizer, Killsect surveillance platform |
+| 💳 **Merchant payment systems** | **~70 merged PRs** — payment pipelines, deposit references, GraphQL operation IDs, KYC data plumbing, cookie/session lifecycle, channel invalidation |
+| 🔑 **Cryptographic orchestration** | Multi-party signing recovery, orchestrator updates, Cap'n Proto protocol revisions, BFX wallet integration, web3 bridge |
+| 🪪 **BankID / eID authentication** | Async BankID result yielding, deprecated flow removal, RMQ handling hardening, Swedish eID authentication fixes |
+| 🏛️ **PSD2 open banking** | HTTP request scaling in PSD2 proxy, stable SQL transaction watcher |
+| 🔁 **Webhook reliability** | WebhookEmitter refactored to persist message retries across restarts |
+| 💸 **Payouts & migrations** | Payout flows, Alembic migration infrastructure, account-selection flows |
+| 🤖 **AI agent framework (Hola)** | RAG token-budgeted retrieval optimizer, surveillance platform prototype |
 | 🐧 **Community forks maintained** | `plymouth-themes` (80+ Android bootanimation themes ported), `Bluecurve` (Red Hat theme for GTK 3/4), `kwin-effects-forceblur` (Plasma 6 blur), `Linux-on-Samsung` (GPU-accelerated Linux on Galaxy), `MacQuake` (native Quake for Apple Silicon) |
 
 <br/>
