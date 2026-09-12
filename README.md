@@ -186,7 +186,7 @@ learn from it.
 
 <div align="center">
 
-[![PlexyDesk Display Server](https://github-readme-stats.vercel.app/api/pin/?username=plexydesk&repo=plexydesk-display-server&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/plexydesk/plexydesk-display-server)
+🖥️ **PlexyDesk Display Server** — *private development, public showcase: [plexydesk/plexydesk](https://github.com/plexydesk/plexydesk)*
 
 </div>
 
@@ -231,8 +231,7 @@ hardcore.
 
 <div align="center">
 
-[![hola-ai-agent](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=hola-ai-agent&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/hola-ai-agent)
-[![oxy](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=oxy&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/oxy)
+🤖 **hola-ai-agent** — *private source, public binaries via [hola-releases](https://github.com/cloudgpu/hola-releases)*
 
 </div>
 
@@ -300,13 +299,13 @@ to GPU management.
 
 | Project | Contribution |
 |---|---|
-| 🖥️ **[plexydesk/plexydesk-display-server](https://github.com/plexydesk/plexydesk-display-server)** | **15 PRs, 934 commits** — libxkbcommon keyboard support, GPU/VRAM budgeting, Pango/HarfBuzz/FreeType text engine, full VT100/xterm terminal, PTY modes, fuzzy launcher, pcalc, Cool Dock |
-| 🏦 **[seksettle/merchant-gateway](https://github.com/seksettle/merchant-gateway)** | **~70 merged PRs** — merchant payment pipelines, deposit references, BankID integration, webhook retry persistence, PSD2 proxy scaling |
-| 🧩 **[BlockSettle/capn-playground](https://github.com/BlockSettle/capn-playground)** | Cap'n Proto protocol work — payment info, validation API, BFX wallet updates, web3 bridge, rebalance API |
-| 🪪 **[Authenticate-eID-Sweden-AB/AuthServer](https://github.com/Authenticate-eID-Sweden-AB/AuthServer)** | Swedish eID authentication — RMQ handling, mobile connection fixes, invoice rounding |
-| 💳 **[seksettle/merchant-orchestrator](https://github.com/seksettle/merchant-orchestrator)** | Payouts, Alembic migrations, account-selection flows |
-| 🔐 **[seksettle/psd2-proxy](https://github.com/seksettle/psd2-proxy)** | HTTP request scaling, SQL watcher stabilization |
-| 🤖 **[cloudgpu/hola-ai-agent](https://github.com/cloudgpu/hola-ai-agent)** | RAG token-budget retrieval optimizer, Killsect surveillance platform |
+| 🖥️ **PlexyDesk Display Server** *(org: [plexydesk](https://github.com/plexydesk))* | **15 PRs, 934 commits** — libxkbcommon keyboard support, GPU/VRAM budgeting, Pango/HarfBuzz/FreeType text engine, full VT100/xterm terminal, PTY modes, fuzzy launcher, pcalc, Cool Dock |
+| 🏦 **seksettle/merchant-gateway** | **~70 merged PRs** — merchant payment pipelines, deposit references, BankID integration, webhook retry persistence, PSD2 proxy scaling |
+| 🧩 **BlockSettle/capn-playground** | Cap'n Proto protocol work — payment info, validation API, BFX wallet updates, web3 bridge, rebalance API |
+| 🪪 **Authenticate-eID-Sweden-AB/AuthServer** | Swedish eID authentication — RMQ handling, mobile connection fixes, invoice rounding |
+| 💳 **seksettle/merchant-orchestrator** | Payouts, Alembic migrations, account-selection flows |
+| 🔐 **seksettle/psd2-proxy** | HTTP request scaling, SQL watcher stabilization |
+| 🤖 **cloudgpu/hola-ai-agent** | RAG token-budget retrieval optimizer, Killsect surveillance platform |
 | 🐧 **Community forks maintained** | `plymouth-themes` (80+ Android bootanimation themes ported), `Bluecurve` (Red Hat theme for GTK 3/4), `kwin-effects-forceblur` (Plasma 6 blur), `Linux-on-Samsung` (GPU-accelerated Linux on Galaxy), `MacQuake` (native Quake for Apple Silicon) |
 
 <br/>
@@ -330,9 +329,9 @@ to GPU management.
 
 <br/>
 
-[![hola-ai-agent](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=hola-ai-agent&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/hola-ai-agent)
+🤖 **hola-ai-agent** — *private source, public binaries via [hola-releases](https://github.com/cloudgpu/hola-releases)*
+
 [![GoogleVoice](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=GoogleVoice&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/GoogleVoice)
-[![guc-server](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=guc-server&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/guc-server)
 [![insta360link-controller](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=insta360link-controller&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/insta360link-controller)
 
 </div>
