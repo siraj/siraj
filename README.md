@@ -420,8 +420,30 @@ Go                          ██████████░░░░░░░�
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=siraj&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=siraj&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top languages" />
+<a href="https://github.com/siraj">
+  <img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=siraj&theme=tokyonight" alt="Profile details" />
+</a>
+<a href="https://github.com/siraj">
+  <img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=siraj&theme=tokyonight" alt="Stats" />
+</a>
+
+<br/>
+
+<a href="https://github.com/siraj">
+  <img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=siraj&theme=tokyonight" alt="Repos per language" />
+</a>
+<a href="https://github.com/siraj">
+  <img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=siraj&theme=tokyonight" alt="Most commit language" />
+</a>
+
+<br/>
+
+<a href="https://github.com/siraj">
+  <img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=siraj&theme=tokyonight&utcOffset=8" alt="Productive time" />
+</a>
+<a href="https://github.com/siraj">
+  <img height="150" src="https://github-readme-stats-sigma-five.vercel.app/api?username=siraj&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true" alt="GitHub stats" />
+</a>
 
 <br/>
 
@@ -429,20 +451,10 @@ Go                          ██████████░░░░░░░�
 
 <br/>
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=siraj&theme=tokyo-night&hide_border=true&bg_color=0D1117&area=true)](https://github.com/siraj)
-
-<br/>
-
-<a href="https://github.com/siraj">
-  <img src="https://github-profile-trophy.vercel.app/?username=siraj&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8&margin-h=8&no-bg=true" alt="Trophies" />
-</a>
-
-<br/>
-
 🤖 **hola-ai-agent** — *private source, public binaries via [hola-releases](https://github.com/cloudgpu/hola-releases)*
 
-[![GoogleVoice](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=GoogleVoice&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/GoogleVoice)
-[![insta360link-controller](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=insta360link-controller&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/insta360link-controller)
+[![GoogleVoice](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=siraj&repo=GoogleVoice&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/GoogleVoice)
+[![insta360link-controller](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=siraj&repo=insta360link-controller&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/insta360link-controller)
 
 </div>
 
