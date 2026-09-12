@@ -166,10 +166,6 @@ human purpose, and the need to act. This isn't a prompt wrapper — it's a
 **5 MB pipeline** for chapter-by-chapter generation with continuity
 tracking, character state, and narrative constraints.
 
-### 📱 `labour-app` — Android labor management (2026)
-A **Kotlin Android application** for labor management — my return to
-mobile with modern Android tooling.
-
 ### 🛠️ `hermes-daily-log` — Agent memory tracking (2026)
 **Daily events, skills, and memory tracking for the Hermes agent** —
 infrastructure for AI agents that need to remember what they did and
