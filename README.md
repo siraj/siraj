@@ -50,6 +50,13 @@
 
 # 🧱 Chapter 1 — The Systems Years (2008–2014)
 
+> 🌐 **Browser engine roots:** before the display servers, I was landing patches
+> in **WebKit** (Qt/GTK ports — zoom APIs, hit-testing API, accelerated
+> compositing) and **Firefox/Gecko** (mousewheel zoom clamping in
+> mozilla-central, reviewed by bzbarsky). Working on two browser engines
+> back-to-back taught me how real-world C++ at scale is built — and it's
+> where the display-server obsession started.
+
 > Where it all started: **C, C++, autotools, GStreamer, and the humble
 > conviction that software should build cleanly on any Unix.**
 
@@ -299,6 +306,8 @@ to GPU management.
 
 | Project | Contribution |
 |---|---|
+| 🌐 **WebKit** *(upstream, 2008 & 2012 — Collabora era)* | **4 landed patches in WebKit trunk** — `r34296` button fonts scale with text-size multiplier ([bug 19251](https://bugs.webkit.org/show_bug.cgi?id=19251)), `r35716` QtWebKit zoom get/set API ([bug 19125](https://bugs.webkit.org/show_bug.cgi?id=19125)), `r37764`+`r37787` `QWebHitTestResult::boundingRect()` API ([bug 19374](https://bugs.webkit.org/show_bug.cgi?id=19374)), `r128372` GTK Clutter accelerated-compositing build fix ([bug 96165](https://bugs.webkit.org/show_bug.cgi?id=96165), reviewed by Martin Robinson) — plus `<param classid>` support for `application/x-qt-object` plugins ([r26586](https://commits.webkit.org/26586@main)) |
+| 🦊 **Firefox / Gecko** *(upstream, 2008)* | **Patch landed in mozilla-central** — clamped mousewheel text zoom to min/max percentages in `nsEventStateManager::ChangeTextSize()` ([bug 424847](https://bugzilla.mozilla.org/show_bug.cgi?id=424847), `r+sr=bzbarsky`, changeset `ed515d20c255`) — still shipping today: the same commit rides along in **Tor Browser**, **I2P Browser** and **Waterfox** |
 | 🖥️ **PlexyDesk Display Server** *(org: [plexydesk](https://github.com/plexydesk))* | **15 PRs, 934 commits** — libxkbcommon keyboard support, GPU/VRAM budgeting, Pango/HarfBuzz/FreeType text engine, full VT100/xterm terminal, PTY modes, fuzzy launcher, pcalc, Cool Dock |
 | 💳 **Merchant payment systems** | **~70 merged PRs** — payment pipelines, deposit references, GraphQL operation IDs, KYC data plumbing, cookie/session lifecycle, channel invalidation |
 | 🔑 **Cryptographic orchestration** | Multi-party signing recovery, orchestrator updates, Cap'n Proto protocol revisions, BFX wallet integration, web3 bridge |
