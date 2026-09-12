@@ -1,16 +1,17 @@
 <!-- 
-  ✨ siraj/siraj — Developer Profile ✨
-  Hand-crafted with love in Montreal.
+  ✨ siraj/siraj — The Work Journey ✨
+  A blog-style chronicle of 17+ years of shipping software.
 -->
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=520&lines=Hi%2C+I'm+Siraj+Razick+%F0%9F%91%8B;Systems+%2B+AI+Engineer;Building+from+C+to+TypeScript;17%2B+years+of+shipping+software" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=560&lines=Hi%2C+I'm+Siraj+Razick+%F0%9F%91%8B;I+build+display+servers%2C+AI+agents+%26+fintech;From+C+kernels+to+TypeScript+apps;17%2B+years+of+shipping+software" alt="Typing SVG" />
 </h1>
 
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-siraj-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/siraj)
-[![Website](https://img.shields.io/badge/Website-plexydesk.org-2ea44f?style=for-the-badge&logo=safari&logoColor=white)](http://www.plexydesk.org)
+[![cloudgpu.io](https://img.shields.io/badge/☁️_cloudgpu.io-GPU_Cloud_Tools-9146FF?style=for-the-badge)](https://cloudgpu.io)
+[![PlexyDesk](https://img.shields.io/badge/🖥️_PlexyDesk-Wayland_Display_Server-2ea44f?style=for-the-badge)](https://github.com/plexydesk)
 [![Location](https://img.shields.io/badge/📍-Montreal%2C+Canada-E34F26?style=for-the-badge)](#)
 [![Followers](https://img.shields.io/github/followers/siraj?style=for-the-badge&color=blue&logo=github)](https://github.com/siraj?tab=followers)
 
@@ -18,60 +19,301 @@
 
 ---
 
-### 🚀 About Me
-
-> 🔭 **17+ years** of building software — from **2008-era C++ desktop stacks** to today's **AI inference engines**
->
-> 🌱 I go **deep across the stack**: firmware, kernels, window managers, compilers, LLMs
->
-> 💼 Building **[cloudgpu.io](https://cloudgpu.io)** — GPU cloud tooling & the Hola AI agent framework (C)
->
-> ⚡ Currently exploring: **AI agents, LoRA fine-tuning, local inference, re-camera APIs**
->
-> 🎯 Philosophy: *if it runs on metal, I want to know how*
+> ### 📖 This profile is a **work journal** — not a résumé.
+> Below is the actual journey, era by era: what I built, why it mattered, and
+> what each project taught me. Skip the buzzwords — this is the real work.
 
 <br/>
 
 ```text
-   Montreal, Canada  ·  GitHub since 2008  ·  155 public repos  ·  27 orgs
+   Montreal, Canada  ·  GitHub since 2008  ·  155 public repos  ·  295 PRs  ·  27 orgs
+   Languages I think in: C · C++ · TypeScript · Go · Python · Assembly
 ```
 
 <br/>
 
-## 🛠️ Tech Stack
+## 🗺️ The Journey at a Glance
+
+| Era | Years | Theme |
+|---|---|---|
+| 🧱 [The Systems Years](#-chapter-1--the-systems-years-20082014) | 2008–2014 | C/C++ libraries, build systems, GStreamer, QNX |
+| 🏦 [The Fintech Years](#-chapter-2--the-fintech--blockchain-years-20192022) | 2019–2022 | Bitcoin infrastructure, BlockSettle, PSD2 payments |
+| 🚀 [The Product Years](#-chapter-3--the-product--app-years-20232025) | 2023–2025 | TypeScript platforms, AI-assisted workflows |
+| 🖥️ [The PlexyShell Years](#-chapter-4--the-plexyshell-years-2025) | 2025– | A Wayland display server from scratch — 934 commits |
+| 🤖 [The Agent Era](#-chapter-5--the-agent-era-2026) | 2026– | Hola: a C library for AI agents + cloudgpu.io |
+
+<br/>
+
+---
+
+# 🧱 Chapter 1 — The Systems Years (2008–2014)
+
+> Where it all started: **C, C++, autotools, GStreamer, and the humble
+> conviction that software should build cleanly on any Unix.**
+
+### 🔊 `gstaudiosinkqnx` — GStreamer audio sink for QNX (2013)
+A **GStreamer audio sink element for QNX** — real embedded-systems work.
+Writing a GStreamer element means living inside the pipeline graph: negotiating
+caps, handling clock drift, and pushing buffers without stalling the chain.
+Doing it for **QNX** (the RTOS that runs cars and medical devices) meant
+learning a completely different audio stack from the ground up. This project
+taught me that *audio latency is a systems-design problem*, not a driver problem.
+
+### 📞 `GoogleVoice` — A C++ API to interact with Google Voice (2012)
+One of my most-starred projects: a **native C++ API for Google Voice** —
+before official APIs existed, this meant reverse-engineering the web
+endpoints, managing session cookies, and building a clean C++ wrapper around
+a moving target. It became a reference for anyone wanting to integrate
+Google Voice into native applications.
+
+### 🔌 `loudmouthcmake` — CMake build files for Loudmouth (2009)
+My **first public repo**: modern CMake build files for the Loudmouth XMPP
+client library. Even in 2009 I was already fixing build systems — a theme
+that would return 15 years later with PlexyDesk.
+
+### 🧪 `cssparser` — Experimental CSS parser (2012)
+An **experimental CSS parser based on lex/yacc grammar specifications** —
+a deep dive into formal grammars, tokenizers, and the surprisingly tricky
+CSS cascade. Pure parser-theory work applied to a real-world format.
+
+### 🖼️ `ioproxyvideofamily` — I/O Kit video family (2015)
+A macOS **I/O Kit video family driver** — kernel-adjacent work on how
+video devices present themselves to the operating system.
+
+### 💬 The XMPP thread
+Loudmouth → `txmpp` (a **C++ XMPP library**) → later a full **XMPP server**.
+Messaging protocols became a decade-long thread through my work: presence,
+streams, and the elegance of XML stanzas.
+
+<br/>
+
+---
+
+# 🏦 Chapter 2 — The Fintech & Blockchain Years (2019–2022)
+
+> Four years inside **BlockSettle** — a regulated Bitcoin settlement platform —
+> where "production" means real money, real audits, and zero tolerance for
+> bugs.
+
+### ₿ `ArmoryDB` — Headless Bitcoin database runtime (2019–2020)
+I forked **ArmoryDB** (the famous Bitcoin Armory wallet engine) and produced a
+**headless runtime** that BlockSettle's trading platform fully supported.
+This is a **116 MB C++ codebase**: memory-mapped blockchain parsing, Bitcoin
+Core integration, and a distributed database. My work covered:
+
+- **Producing the headless runtime** — stripping the wallet UI while keeping the full blockchain-indexing engine
+- **Binary distribution** — Ubuntu PPA (`ppa:blocksettle/armorydb`), Windows, and macOS builds
+- **`armorydb_installer`** — a full **NSIS installer** (~50 MB of packaging work) for Windows deployments
+- The delicate **memory-map contract**: ArmoryDB must run alongside a synced Bitcoin Core node on the same storage device
+
+### 🧩 `common` — BlockSettle system core (2020)
+The **shared code layer for the entire BlockSettle system** (~19 MB) — the
+protocol definitions, cryptographic primitives, and common utilities that
+every BlockSettle service linked against. When you touch `common`, every
+service downstream feels it.
+
+### 🔐 `login-server` — Authentication service (2021–2022)
+A **Python authentication and session service** for the BlockSettle
+ecosystem — session management, secure login flows, and the supporting
+test harness (`login-server-test-session`).
+
+### 💱 `daytrader` — Trading engine (2022)
+A **Python trading engine** (~600 KB) built for BlockSettle's dealer
+infrastructure — order handling and market-facing logic.
+
+### 🏗️ The wider fintech constellation
+Around this core I built and maintained the connective tissue of a regulated
+financial platform — **295 pull requests** across the ecosystem:
+
+- **`seksettle/merchant-gateway`** — ~70 merged PRs: merchant staging/prod pipelines, deposit references, BankID flows, webhook retry persistence, PSD2 proxy scaling, cookie/session handling
+- **`BlockSettle/capn-playground`** — Cap'n Proto protocol work: payment info, validation API, BFX wallet updates, web3 bridges, rebalance APIs
+- **`Authenticate-eID-Sweden-AB/AuthServer`** — Swedish eID authentication: RMQ handling, mobile connection compilation fixes, invoice rounding
+- **`blocksettle-docker`** — reproducible Docker setup for the whole stack
+
+> 🎓 **What this era taught me:** regulated fintech is where "it works on my
+> machine" goes to die. Every change is staged, audited, and signed. I learned
+> to write code that survives security review — and to love it.
+
+<br/>
+
+---
+
+# 🚀 Chapter 3 — The Product & App Years (2023–2025)
+
+> Stepping out of pure infrastructure: building **complete products** with
+> modern TypeScript stacks, and teaching AI to help write novels.
+
+### 🛒 `hello-goods-market` — Marketplace platform (2025)
+A **TypeScript marketplace application** (~500 KB) — the full arc of a
+commerce product: listings, transactions, and the UX glue in between.
+
+### 📈 `autobid-mobile-enhancer` — Auction tooling (2025)
+A **TypeScript mobile enhancement layer** (~540 KB) for the autobid
+ecosystem — bringing real-time bidding workflows to mobile clients.
+
+### 🌒 `darktradehub` — Trading hub (2025)
+A **TypeScript trading hub** (~215 KB) — dark-pool-style trading interfaces
+with live market data.
+
+### 🎙️ `audio-forge-studio-pro` — Audio production suite (2025)
+A **TypeScript audio production application** (~280 KB) — a DAW-style
+toolchain for recording, editing, and mastering workflows.
+
+### 📖 `armor-protocol` — AI-assisted novel generation (2025)
+One of my favourite experiments: a **Python system for AI-assisted
+novel generation** — *The Armor Protocol*, a 48-chapter story about AI,
+human purpose, and the need to act. This isn't a prompt wrapper — it's a
+**5 MB pipeline** for chapter-by-chapter generation with continuity
+tracking, character state, and narrative constraints.
+
+### 📱 `labour-app` — Android labor management (2026)
+A **Kotlin Android application** for labor management — my return to
+mobile with modern Android tooling.
+
+### 🛠️ `hermes-daily-log` — Agent memory tracking (2026)
+**Daily events, skills, and memory tracking for the Hermes agent** —
+infrastructure for AI agents that need to remember what they did and
+learn from it.
+
+<br/>
+
+---
+
+# 🖥️ Chapter 4 — The PlexyShell Years (2025–)
+
+> **934 commits.** A Wayland display server, a terminal, a shell — built
+> from source, for GNU/Linux. This is the deepest systems work of my career.
 
 <div align="center">
 
-**Languages I think in:**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Assembly](https://img.shields.io/badge/Assembly-6E4C13?style=for-the-badge&logo=assemblyscript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Objective-C](https://img.shields.io/badge/Objective--C-438EFF?style=for-the-badge&logo=apple&logoColor=white)
-![GStreamer](https://img.shields.io/badge/GStreamer-FF545D?style=for-the-badge&logo=gstreamer&logoColor=white)
+[![PlexyDesk Display Server](https://github-readme-stats.vercel.app/api/pin/?username=plexydesk&repo=plexydesk-display-server&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/plexydesk/plexydesk-display-server)
 
 </div>
 
-<br/>
+### What PlexyShell is
 
-### ⚙️ Deep-Tech Focus Areas
+**PlexyDesk is a local Wayland compositor stack** — a repo-built
+`gnu-liquid-shell`, `wayland_bridge`, `plexy_term`, and `Xwayland`. The
+build model is radical: **Debian provides only headers and build tools;
+the entire runtime stack is built from source into the repo** — `wayland`,
+`wayland-protocols`, `libdrm`, `libweston`, and `Xwayland` itself from the
+`xserver/` tree. The runtime wrapper **rejects system fallbacks** when a
+local replacement exists. Hermetic, reproducible, and unapologetically
+hardcore.
 
-| Domain | What I build |
+### 🧩 My contributions — the real work
+
+| Contribution | What it took |
 |---|---|
-| 🧠 **AI / Inference** | LLM agents, LoRA adapters, local inference, MoE models, re-camera & video-gen APIs |
-| 🖥️ **Systems** | C/C++ libraries, XMPP, GStreamer, QNX audio sinks, firmware & hardware control |
-| 🎨 **Desktop / UI** | PlexyDesk, KDE Plasma effects, GTK themes, macOS NSWindow styles, TUIs |
-| 📱 **Mobile / Embedded** | Android, Samsung-on-Linux, 4G modem tooling, Termux GPU desktops |
-| 🏗️ **Infra / Web** | TypeScript services, Postgres, RunPod, serverless GPU pipelines |
+| ⌨️ **libxkbcommon keyboard stack** | Replaced hardcoded keycode mappings with **libxkbcommon** for proper keyboard layout support — the difference between "it types" and "it types *correctly* on any layout" |
+| 🎮 **GPU profile detection + VRAM budgets** | Implemented GPU profile detection, VRAM budget configuration, and **VRAM budget tracking and limits** — the compositor now knows its own memory envelope |
+| ✍️ **Pango/HarfBuzz/FreeType text engine** | Implemented the full **text rendering stack**: shaping (HarfBuzz), layout (Pango), rasterization (FreeType) — complex scripts render correctly |
+| 🖥️ **VT100/xterm terminal emulation** | Full **VT100/xterm compatibility with scrollback buffer** for `plexy_term` — escape sequences, cursor addressing, alternate screens, the works |
+| 🔌 **PTY & shell integration** | Improved PTY and shell integration with proper **terminal modes** handling |
+| 🚀 **Native fuzzy launcher (prunner)** | A **native Plexy launcher with fuzzy search** — instant app launching, zero external dependencies |
+| 🧮 **pcalc — scientific calculator** | Refactored into a **native PlexyShell scientific calculator** |
+| 🎨 **Cool Dock port** | Ported and refined **Cool Dock features** onto the server dock |
+| 🖱️ **Xwayland game mouse grabbing** | Stability fixes for **mouse grabbing in games** running through Xwayland |
+| 🧹 **Repository hygiene** | Untracked generated icons, verified `.gitignore` coverage for all build artifacts |
+
+> 🎓 **What this era taught me:** a display server is the most unforgiving
+> kind of software — every millisecond is visible, every leak is a crash,
+> and the keyboard is harder than the GPU.
 
 <br/>
 
-## 📊 GitHub Stats
+---
+
+# 🤖 Chapter 5 — The Agent Era (2026–)
+
+> **Hola** — a small C library for building conversational AI agents.
+> No Python, no Node, no framework tax. Just C, plugins, and an agent loop.
+
+<div align="center">
+
+[![hola-ai-agent](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=hola-ai-agent&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/hola-ai-agent)
+[![oxy](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=oxy&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/oxy)
+
+</div>
+
+### 🤖 `hola-ai-agent` — The Hola agent framework
+
+Under **[cloudgpu.io](https://cloudgpu.io)** I designed and built **Hola** —
+a **C library for building conversational AI agents**, plus reference
+applications that prove the design:
+
+- **`hola_core/`** — the library you link against: the **agent loop**, a
+  **tool registry**, **prompt assembly**, providers for **OpenAI-compatible
+  and local models**, **session storage**, and a **C plugin loader** — add
+  new tools without rebuilding the binary
+- **`hola-coder`** — an **agentic coding tool** that explores code, edits
+  with search/replace, runs builds and tests, and does git operations
+- **`hola-admin`** — a **sysadmin agent** that inspects systems, reads
+  logs, runs safe diagnostics, and writes scripts
+- **Shell + editor integration** — Zsh helpers (`hola-suggest`,
+  `hola-explain`, `hola-chat`) and a **Vim/Neovim plugin**
+- **Release engineering** — sandboxed Docker builds producing `.deb`,
+  `.rpm`, Arch packages, macOS and Windows binaries, all published through
+  a one-line installer:
+
+```bash
+# Linux / macOS / FreeBSD
+curl -fsSL https://raw.githubusercontent.com/cloudgpu/hola-releases/main/install.sh | sh
+```
+
+- **Current research** — an open PR for a **token-budgeted compact
+  retrieval optimizer** in the RAG pipeline: fitting maximum context value
+  into a fixed token budget
+
+### ⚡ `oxy` — GPU cloud CLI
+A **command-line tool for GPU cloud access** — drive GPU instances
+straight from the terminal, the cloudgpu.io way.
+
+### 🔊 `demucs-runpod` / `demucs-server` — Serverless GPU audio
+**Audio source separation on serverless GPU** — upload a track, get stems
+back, pay per second. Built on RunPod with the Demucs model.
+
+### 🎛️ `gpu_ctl_app` — Native GPU control
+A **C++ application for GPU control** — the systems-programmer's answer
+to GPU management.
+
+### 🧠 Other agent-adjacent work
+- **`hola-miner`** — Python mining tooling in the Hola ecosystem
+- **`guc-server`** — a **multi-user image-edit server** (Tornado + React +
+  Postgres + RunPod, ~2.2 MB): upload, edit with AI models, manage users
+  and jobs
+- **`recamera-api`** — a **serverless video re-camera API**: upload a
+  monocular video, get it back from any camera angle (TrajectoryCrafter /
+  ReCamMaster on RunPod)
+- **`insta360link-controller`** — a **daemon, CLI, and optional firmware**
+  for controlling an Insta360 Link webcam without the first-party software
+  — because hardware should obey *you*
+
+<br/>
+
+---
+
+# 🌍 Open Source Contributions
+
+> Beyond my own repos: **295 pull requests** across the GitHub ecosystem —
+> here are the ones that matter.
+
+| Project | Contribution |
+|---|---|
+| 🖥️ **[plexydesk/plexydesk-display-server](https://github.com/plexydesk/plexydesk-display-server)** | **15 PRs, 934 commits** — libxkbcommon keyboard support, GPU/VRAM budgeting, Pango/HarfBuzz/FreeType text engine, full VT100/xterm terminal, PTY modes, fuzzy launcher, pcalc, Cool Dock |
+| 🏦 **[seksettle/merchant-gateway](https://github.com/seksettle/merchant-gateway)** | **~70 merged PRs** — merchant payment pipelines, deposit references, BankID integration, webhook retry persistence, PSD2 proxy scaling |
+| 🧩 **[BlockSettle/capn-playground](https://github.com/BlockSettle/capn-playground)** | Cap'n Proto protocol work — payment info, validation API, BFX wallet updates, web3 bridge, rebalance API |
+| 🪪 **[Authenticate-eID-Sweden-AB/AuthServer](https://github.com/Authenticate-eID-Sweden-AB/AuthServer)** | Swedish eID authentication — RMQ handling, mobile connection fixes, invoice rounding |
+| 💳 **[seksettle/merchant-orchestrator](https://github.com/seksettle/merchant-orchestrator)** | Payouts, Alembic migrations, account-selection flows |
+| 🔐 **[seksettle/psd2-proxy](https://github.com/seksettle/psd2-proxy)** | HTTP request scaling, SQL watcher stabilization |
+| 🤖 **[cloudgpu/hola-ai-agent](https://github.com/cloudgpu/hola-ai-agent)** | RAG token-budget retrieval optimizer, Killsect surveillance platform |
+| 🐧 **Community forks maintained** | `plymouth-themes` (80+ Android bootanimation themes ported), `Bluecurve` (Red Hat theme for GTK 3/4), `kwin-effects-forceblur` (Plasma 6 blur), `Linux-on-Samsung` (GPU-accelerated Linux on Galaxy), `MacQuake` (native Quake for Apple Silicon) |
+
+<br/>
+
+---
+
+# 📊 The Numbers
 
 <div align="center">
 
@@ -86,76 +328,12 @@
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=siraj&theme=tokyo-night&hide_border=true&bg_color=0D1117&area=true)](https://github.com/siraj)
 
-</div>
-
 <br/>
-
-## 🌟 Highlighted Projects
-
-<div align="center">
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=GoogleVoice&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/GoogleVoice)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=txmpp&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/txmpp)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=insta360link-controller&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/insta360link-controller)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=pydiscordo&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/pydiscordo)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=guc-server&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/guc-server)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=recamera-api&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/recamera-api)
-
-</div>
-
-<br/>
-
-## 🏢 Organizations
-
-<div align="center">
-
-![cloudgpu.io](https://img.shields.io/badge/cloudgpu.io-Featured_Work-9146FF?style=flat-square)
-![PlexyDesk](https://img.shields.io/badge/PlexyDesk-Founder-2ea44f?style=flat-square)
-![BlockSettle](https://img.shields.io/badge/BlockSettle-Blockchain-FF6C37?style=flat-square)
-![StoreKit](https://img.shields.io/badge/StoreKit-Commerce-blue?style=flat-square)
-![CloudGPU](https://img.shields.io/badge/CloudGPU-Compute-9146FF?style=flat-square)
-
-</div>
-
-<br/>
-
-## ☁️ Featured Work — cloudgpu.io
-
-<div align="center">
-
-[![cloudgpu.io](https://img.shields.io/badge/☁️_cloudgpu.io-Cloud_GPU_Tools_%26_OS-9146FF?style=for-the-badge)](https://cloudgpu.io)
-[![GitHub Org](https://img.shields.io/badge/GitHub-github.com%2Fcloudgpu-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cloudgpu)
-
-**Building the toolchain for GPU-native AI workloads — from a hand-rolled C agent
-framework to serverless GPU pipelines.**
-
-</div>
-
-<br/>
-
-| Project | What it is |
-|---|---|
-| 🤖 **[hola-ai-agent](https://github.com/cloudgpu/hola-ai-agent)** | A small, dependency-light **C library for building conversational AI agents** — agent loop, tool registry, prompt assembly, OpenAI-compatible + local providers, session storage, and a C plugin system. Ships with **hola-admin** (sysadmin agent) and **hola-coder** (agentic coding tool). |
-| 📦 **[hola-releases](https://github.com/cloudgpu/hola-releases)** | Prebuilt cross-platform binaries (Linux / macOS / FreeBSD) with a one-line installer: |
-| ⚡ **[oxy](https://github.com/cloudgpu/oxy)** | **GPU Cloud command line access tool** — drive GPU instances straight from your terminal. |
-| 🌐 **[website](https://github.com/cloudgpu/website)** | The cloudgpu.io site (TypeScript). |
-| 🔊 **[demucs-runpod](https://github.com/cloudgpu/demucs-runpod) / [demucs-server](https://github.com/cloudgpu/demucs-server)** | Serverless GPU audio-source separation on RunPod. |
-| 🎛️ **[gpu_ctl_app](https://github.com/cloudgpu/gpu_ctl_app)** | Native C++ GPU control application. |
-
-<br/>
-
-```bash
-# Install Hola — Linux / macOS / FreeBSD
-curl -fsSL https://raw.githubusercontent.com/cloudgpu/hola-releases/main/install.sh | sh
-```
-
-<br/>
-
-<div align="center">
 
 [![hola-ai-agent](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=hola-ai-agent&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/hola-ai-agent)
-[![oxy](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=oxy&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/oxy)
-[![demucs-runpod](https://github-readme-stats.vercel.app/api/pin/?username=cloudgpu&repo=demucs-runpod&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/cloudgpu/demucs-runpod)
+[![GoogleVoice](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=GoogleVoice&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/GoogleVoice)
+[![guc-server](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=guc-server&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/guc-server)
+[![insta360link-controller](https://github-readme-stats.vercel.app/api/pin/?username=siraj&repo=insta360link-controller&theme=tokyonight&hide_border=true&bg_color=0D1117)](https://github.com/siraj/insta360link-controller)
 
 </div>
 
@@ -175,6 +353,8 @@ curl -fsSL https://raw.githubusercontent.com/cloudgpu/hola-releases/main/install
 
 ![Profile views](https://komarev.com/ghpvc/?username=siraj&color=58A6FF&style=for-the-badge&label=PROFILE+VIEWS)
 
-⭐️ From [siraj](https://github.com/siraj) — *Crafted with care, 2026*
+**"From C kernels to AI agents — the journey continues."**
+
+⭐️ From [siraj](https://github.com/siraj) — *Montreal, 2026*
 
 </div>
