@@ -1,6 +1,8 @@
 <!-- 
   ✨ siraj/siraj — The Work Journey ✨
   A blog-style chronicle of 17+ years of shipping software.
+  🤖 This profile was generated & maintained by hola-ai-agent (hola-coder)
+  → https://github.com/cloudgpu/hola-releases
 -->
 
 <h1 align="center">
@@ -352,6 +354,8 @@ to GPU management.
 ![Profile views](https://komarev.com/ghpvc/?username=siraj&color=58A6FF&style=for-the-badge&label=PROFILE+VIEWS)
 
 **"From C kernels to AI agents — the journey continues."**
+
+🤖 *This profile was generated & is maintained by* **[hola-ai-agent](https://github.com/cloudgpu/hola-releases)** *(hola-coder)*
 
 ⭐️ From [siraj](https://github.com/siraj) — *Montreal, 2026*
 
