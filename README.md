@@ -1,18 +1,28 @@
-# Siraj Razick
+# 👾 Siraj Razick
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│ SYSTEMS ENGINEER :: LOW-LEVEL GRAPHICS :: AI :: INFRA       │
+└──────────────────────────────────────────────────────────────┘
+```
 
 Systems engineer working across low-level graphics, developer tooling, distributed systems, fintech infrastructure, and AI agents.
 
 I have been building software since the KDE 3/4 era, mostly in C and C++, with later work spanning Python, TypeScript, Go, Linux infrastructure, GPU workloads, and modern agent systems.
 
-[GitHub](https://github.com/siraj) · [cloudgpu.io](https://cloudgpu.io) · [PlexyDesk](https://github.com/plexydesk)
+`[ GITHUB ]` https://github.com/siraj  ·  `[ CLOUDGPU ]` https://cloudgpu.io  ·  `[ PLEXYDESK ]` https://github.com/plexydesk
 
 ---
 
-## What I work on
+## 🎮 What I work on
 
-### Systems and graphics
+### 🖥️ Systems and graphics
 
 My strongest background is in systems software: desktop shells, display-server work, rendering, input, terminals, build systems, packaging, and platform integration.
+
+```text
+[ C/C++ ] [ WAYLAND ] [ X11/XWAYLAND ] [ QT ] [ GSTREAMER ] [ POSIX ]
+```
 
 Areas I have worked deeply in include:
 
@@ -27,9 +37,15 @@ Areas I have worked deeply in include:
 
 Today, much of that work continues around **PlexyDesk**, where I focus on display-server and desktop-system engineering.
 
-### Browser engines and platform code
+### 🌐 Browser engines and platform code
 
 Earlier in my career I worked inside the codebases behind **WebKit, Google Chrome / Chromium, and Firefox / Gecko**.
+
+```text
+┌─ BROWSER SYSTEMS ────────────────────────────────────────────┐
+│ rendering · input · graphics · APIs · platform integration │
+└──────────────────────────────────────────────────────────────┘
+```
 
 That experience was less about shipping a standalone browser and more about learning how browser engines are actually built: large C++ systems with rendering, layout, input, graphics, platform abstraction, API compatibility, performance constraints, and an enormous amount of cross-platform behaviour living in the same tree.
 
@@ -46,9 +62,13 @@ The lasting skills from that period are still directly relevant to the work I do
 
 Browser-engine work was also an important bridge between my KDE years and the later display-server work. It reinforced my interest in the layers underneath applications: rendering, input, graphics, process boundaries, and platform plumbing.
 
-### AI agents and developer tooling
+### 🤖 AI agents and developer tooling
 
 More recently I have been building agent runtimes and developer tools, with an emphasis on keeping the underlying systems small, understandable, and portable.
+
+```text
+[ AGENT LOOP ] → [ TOOLS ] → [ MODEL ] → [ SYSTEM ]
+```
 
 The work spans:
 
@@ -63,7 +83,7 @@ The work spans:
 
 A lot of this work sits under the **cloudgpu.io** umbrella.
 
-### Fintech and production infrastructure
+### 💾 Fintech and production infrastructure
 
 I spent several years working on regulated financial infrastructure and Bitcoin-related systems. That work involved production services where reliability, auditability, authentication, payments, cryptography, messaging, and deployment discipline mattered more than novelty.
 
@@ -82,11 +102,11 @@ I keep the internal architecture and implementation details of that work private
 
 ---
 
-## Open-source roots
+## 🕹️ Open-source roots
 
 I started contributing to open source during the KDE 3 and KDE 4 transition.
 
-### KDE / Plasma
+### 🐧 KDE / Plasma
 
 My early work included KDE desktop components, Plasma-related code, SVG-based UI experiments, desktop launchers, build fixes, and supporting libraries.
 
@@ -94,7 +114,7 @@ Projects from that period include **KBFX**, **Raptor / Plasmic-Raptor**, and ups
 
 That period taught me most of the habits I still value: reading unfamiliar code, working inside large projects, taking review seriously, and fixing the layer underneath the visible bug.
 
-### Browser-engine contributions
+### 🌍 Browser-engine contributions
 
 I also contributed upstream work around **WebKit, Chromium / Google Chrome, and Firefox / Gecko**.
 
@@ -102,7 +122,7 @@ Rather than listing individual bugs or patches here, I prefer to describe the en
 
 For me, that period was where desktop systems work expanded into browser systems work—and where I became comfortable operating inside codebases large enough that no single person can hold the whole architecture in their head.
 
-### Other systems work
+### 🔧 Other systems work
 
 Over the years I have also worked on projects involving:
 
@@ -117,9 +137,9 @@ Over the years I have also worked on projects involving:
 
 ---
 
-## Selected public work
+## 🧩 Selected public work
 
-### PlexyDesk
+### 🖥️ PlexyDesk
 
 [PlexyDesk](https://github.com/plexydesk) is where much of my current low-level systems work lives.
 
@@ -127,15 +147,15 @@ My work there has included areas such as input, rendering, terminal behaviour, G
 
 The interesting part for me is not any single feature. It is the interaction between all of them: input, rendering, process management, memory, latency, compatibility, and user-visible behaviour all meet in the same place.
 
-### GoogleVoice
+### ☎️ GoogleVoice
 
 [GoogleVoice](https://github.com/siraj/GoogleVoice) is an older C++ project from a very different era of the web. It involved building a native interface around a service that did not offer the kind of official integration surface developers would expect today.
 
-### insta360link-controller
+### 📷 insta360link-controller
 
 [insta360link-controller](https://github.com/siraj/insta360link-controller) is an example of the kind of software I still enjoy building: small, practical tooling that gives users direct control over hardware.
 
-### cloudgpu.io
+### ⚡ cloudgpu.io
 
 [cloudgpu.io](https://cloudgpu.io) is where I am exploring GPU infrastructure, AI tooling, and agent systems.
 
@@ -143,43 +163,51 @@ I am especially interested in reducing the amount of framework machinery between
 
 ---
 
-## Core stack
+## 🧠 Core stack
 
-**Systems:** C, C++, Linux, Wayland, Qt, X11/Xwayland, GStreamer, POSIX
-
-**Application / services:** Python, TypeScript, Go, PostgreSQL, GraphQL, REST
-
-**Infrastructure:** Docker, Linux packaging, CI/CD, GPU runtimes, serverless workloads
-
-**AI / agents:** model APIs, local inference, tool-calling systems, RAG, context management, agent tooling
+```text
+┌──────────── SYSTEMS ────────────┬──────────── SERVICES ────────────┐
+│ C · C++ · Linux · Wayland      │ Python · TypeScript · Go         │
+│ Qt · X11/Xwayland · GStreamer  │ PostgreSQL · GraphQL · REST      │
+├──────────── INFRA ──────────────┼──────────── AGENTS ──────────────┤
+│ Docker · CI/CD · packaging     │ tool calling · RAG · inference   │
+│ GPU runtimes · serverless      │ context · local/remote models    │
+└─────────────────────────────────┴───────────────────────────────────┘
+```
 
 I am comfortable moving between low-level and product-level work. A typical project can take me from debugging a rendering or process issue to designing an API, writing a CLI, packaging a release, or building the interface around it.
 
 ---
 
-## How I tend to build
+## 🧱 How I tend to build
 
-A few principles have stayed consistent across very different projects:
-
-- understand the underlying system before adding abstraction
-- keep dependencies deliberate
-- make behaviour observable and debuggable
-- prefer boring reliability over clever fragility
-- automate builds and releases early
-- keep the path from source code to running software understandable
-- use AI as an engineering tool, not as a substitute for understanding the system
+```text
+> understand the system first
+> keep dependencies deliberate
+> make behaviour observable
+> prefer boring reliability
+> automate releases early
+> keep source → running software understandable
+> use AI as a tool, not a substitute for understanding
+```
 
 ---
 
-## Current interests
+## 🚀 Current interests
 
-Right now I am spending most of my time around:
-
-- native AI-agent runtimes
-- developer and sysadmin agents
-- GPU-backed applications and inference
-- Wayland and desktop-system engineering
-- terminal-first tools
-- small infrastructure products
+```text
+[01] native AI-agent runtimes
+[02] developer and sysadmin agents
+[03] GPU-backed applications and inference
+[04] Wayland and desktop-system engineering
+[05] terminal-first tools
+[06] small infrastructure products
+```
 
 I still enjoy the same class of problem I started with: software sitting close enough to the system that the abstractions eventually run out.
+
+```text
+╔══════════════════════════════════════════════════════════════╗
+║                    CONTINUE?  [Y] / [N]                    ║
+╚══════════════════════════════════════════════════════════════╝
+```
