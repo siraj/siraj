@@ -27,6 +27,25 @@ Areas I have worked deeply in include:
 
 Today, much of that work continues around **PlexyDesk**, where I focus on display-server and desktop-system engineering.
 
+### Browser engines and platform code
+
+Earlier in my career I worked inside the codebases behind **WebKit, Google Chrome / Chromium, and Firefox / Gecko**.
+
+That experience was less about shipping a standalone browser and more about learning how browser engines are actually built: large C++ systems with rendering, layout, input, graphics, platform abstraction, API compatibility, performance constraints, and an enormous amount of cross-platform behaviour living in the same tree.
+
+I worked in areas around browser APIs, rendering and compositing behaviour, UI/input handling, and platform integration. I deliberately keep the profile at that level rather than turning it into a list of individual patches.
+
+The lasting skills from that period are still directly relevant to the work I do now:
+
+- navigating and modifying very large C++ codebases
+- understanding rendering and event pipelines end to end
+- debugging behaviour that crosses framework, OS, and graphics boundaries
+- maintaining compatibility across platforms and API layers
+- working with mature review processes and upstream maintainers
+- reasoning about performance-sensitive, user-visible systems
+
+Browser-engine work was also an important bridge between my KDE years and the later display-server work. It reinforced my interest in the layers underneath applications: rendering, input, graphics, process boundaries, and platform plumbing.
+
 ### AI agents and developer tooling
 
 More recently I have been building agent runtimes and developer tools, with an emphasis on keeping the underlying systems small, understandable, and portable.
@@ -75,11 +94,13 @@ Projects from that period include **KBFX**, **Raptor / Plasmic-Raptor**, and ups
 
 That period taught me most of the habits I still value: reading unfamiliar code, working inside large projects, taking review seriously, and fixing the layer underneath the visible bug.
 
-### WebKit and Firefox
+### Browser-engine contributions
 
-I also contributed patches to **WebKit** and **Firefox/Gecko**, working around browser UI behaviour, APIs, rendering-related code, and platform integration.
+I also contributed upstream work around **WebKit, Chromium / Google Chrome, and Firefox / Gecko**.
 
-That was my first exposure to very large C++ codebases maintained by distributed engineering teams.
+Rather than listing individual bugs or patches here, I prefer to describe the engineering experience it gave me: working inside mature browser stacks, understanding rendering and input paths, dealing with cross-platform behaviour, and getting changes through established upstream review processes.
+
+For me, that period was where desktop systems work expanded into browser systems work—and where I became comfortable operating inside codebases large enough that no single person can hold the whole architecture in their head.
 
 ### Other systems work
 
