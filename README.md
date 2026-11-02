@@ -2,7 +2,7 @@
 
 ```text
 ┌──────────────────────────────────────────────────────────────┐
-│ SYSTEMS ENGINEER :: LOW-LEVEL GRAPHICS :: AI :: INFRA       │
+│ CTO :: SYSTEMS ENGINEER :: LOW-LEVEL GRAPHICS :: AI :: INFRA       │
 └──────────────────────────────────────────────────────────────┘
 ```
 
