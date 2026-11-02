@@ -1,4 +1,4 @@
-# 👾 Siraj Razick
+# 👾 Siraj Razick - CTO cloudgpu.io
 
 ```text
 ┌──────────────────────────────────────────────────────────────┐
@@ -6,7 +6,7 @@
 └──────────────────────────────────────────────────────────────┘
 ```
 
-Systems engineer working across low-level graphics, developer tooling, distributed systems, fintech infrastructure, and AI agents.
+Systems engineer and CTO of cloudgpu.io, working across low-level graphics, developer tooling, distributed systems, fintech infrastructure, and AI agents.
 
 I have been building software since the KDE 3/4 era, mostly in C and C++, with later work spanning Python, TypeScript, Go, Linux infrastructure, GPU workloads, and modern agent systems.
 
